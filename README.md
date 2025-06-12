@@ -114,6 +114,7 @@ alembic upgrade head
 
 ```bash
 python main.py
+uvicorn -m  main:app --reload
 ```
 
 A API estará disponível em: http://localhost:8000
