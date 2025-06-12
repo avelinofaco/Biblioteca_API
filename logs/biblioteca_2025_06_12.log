@@ -1,0 +1,16 @@
+INFO | 2025-06-12 09:12:59 | config.logging_config | Aplicação iniciada e tabelas criadas
+INFO | 2025-06-12 09:13:57 | config.logging_config | Aplicação iniciada e tabelas criadas
+INFO | 2025-06-12 09:15:28 | config.logging_config | Listagem de autores: 0 encontrados
+INFO | 2025-06-12 09:15:56 | config.logging_config | Autor criado com sucesso: ID 1
+INFO | 2025-06-12 09:16:14 | config.logging_config | Autor criado com sucesso: ID 2
+INFO | 2025-06-12 09:16:35 | config.logging_config | Autor criado com sucesso: ID 3
+INFO | 2025-06-12 09:16:48 | config.logging_config | Listagem de autores: 3 encontrados
+INFO | 2025-06-12 09:17:00 | config.logging_config | Contagem de autores: 3
+INFO | 2025-06-12 09:17:13 | config.logging_config | Busca de autores: 1 encontrados
+INFO | 2025-06-12 09:17:21 | config.logging_config | Busca de autores: 3 encontrados
+INFO | 2025-06-12 09:17:33 | config.logging_config | Autor encontrado: ID 2
+INFO | 2025-06-12 09:26:01 | config.logging_config | Listagem de autores: 3 encontrados
+INFO | 2025-06-12 09:26:01 | config.logging_config | Listagem de autores: 3 encontrados
+INFO | 2025-06-12 09:26:17 | config.logging_config | Aplicação iniciada e tabelas criadas
+INFO | 2025-06-12 09:26:38 | config.logging_config | Listagem de autores: 3 encontrados
+INFO | 2025-06-12 10:40:59 | config.logging_config | Aplicação iniciada e tabelas criadas

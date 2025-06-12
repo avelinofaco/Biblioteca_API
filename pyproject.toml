@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "projeto-2"
+version = "0.1.0"
+description = ""
+authors = ["George Felipe <georgelipe2003@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+sqlalchemy = "^2.0.41"
+sqlmodel = "^0.0.24"
+fastapi = {extras = ["standard"], version = "^0.115.12"}
+fastapi-crudrouter = "^0.8.6"
+alembic = "^1.16.1"
+pydantic = "^2.11.5"
+python-dotenv = "^1.1.0"
+psycopg2 = "^2.9.10"
+
+[tool.ruff]
+line-length = 90
+extend-exclude = ['migrations']
+
+[tool.ruff.lint]
+preview = true
+select = ['I', 'F', 'E', 'W', 'PL', 'PT']
+
+[tool.ruff.format]
+preview = true
+quote-style = 'single'
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.0"
+pytest-cov = "^6.1.1"
+taskipy = "^1.14.1"
+ruff = "^0.11.13"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = '-p no:warnings'
+
+[tool.taskipy.tasks]
+lint = 'ruff check'
+pre_format = 'ruff check --fix'
+format = 'ruff format'
+run = 'fastapi dev projeto_2/main.py'
+pre_test = 'task lint'
+test = 'pytest -s -x --cov=projeto_2 -vv'
+post_test = 'coverage html'
